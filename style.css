@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/Top\ up\ credit-bro.png);
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Inconsolata";
+}
+
+.heading {
+  color: rgb(53, 197, 5);
+  text-shadow: 2px 2px 20px rgb(68, 250, 1);
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.container {
+  min-width: 40vw;
+  max-width: 10vw;
+  height: 100vh;
+  background: rgba(100, 138, 94, 0.496);
+  margin-left: 450px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.454);
+}
+
+.greet {
+  font-size: 25px;
+}
+
+.greet input {
+  border: none;
+  outline: none;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+form {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.double {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+
+.form-check-field {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  background: #e63946;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: 4px 4px 0px #d90429;
+}
+
+button:hover {
+  transform: translateX(4px) translateY(4px);
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.427);
+  scale: 0.96;
+  transition: all 0.4s;
+}
+
+/* liste alanı */
+#list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 30px;
+  overflow: auto;
+  padding: 10px;
+  height: 100%;
+}
+
+.expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  /* https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.expense .price {
+  color: red;
+}
+
+.expense .btns img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* ödenmiş olan verilecek stiller */
+.payed {
+  opacity: 0.7;
+}
+
+.payed .name {
+  text-decoration: line-through;
+}
+
+.payed .price {
+  color: green;
+}
+
+/* toplam alanı */
+.sum {
+  background-color: rgb(35, 167, 8);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.sum:hover {
+  box-shadow: 0 0 10px rgba(63, 63, 63, 0.952);
+  transition: all 0.4s;
+}
+
+#sum-info {
+  color: yellow;
+}
+
+select {
+  width: 30%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
